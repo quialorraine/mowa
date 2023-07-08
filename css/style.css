@@ -515,15 +515,21 @@ a {
   background: linear-gradient(180deg, #C7FF6B 0%, #82AA41 100%);
   -webkit-box-shadow: 0px 44px 34px 0px rgba(166, 200, 74, 0.25), 0px 9px 0px 0px #82AA41, 0px -1px 34px 0px #FFF7B1 inset;
           box-shadow: 0px 44px 34px 0px rgba(166, 200, 74, 0.25), 0px 9px 0px 0px #82AA41, 0px -1px 34px 0px #FFF7B1 inset;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.intro__button_flex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .intro__bg img {
@@ -678,7 +684,17 @@ a {
 }
 
 .benefits {
+  overflow: hidden;
+}
+
+.benefits__wrapper {
+  overflow: auto;
   padding: 120px 0px 120px 0;
+  max-height: 700px;
+}
+
+.benefits__wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 .benefits__body {
@@ -686,6 +702,11 @@ a {
   display: -ms-flexbox;
   display: flex;
   gap: 50px;
+  margin-bottom: 220px;
+}
+
+.benefits__body:last-child {
+  margin-bottom: 80px;
 }
 
 .benefits__content {
@@ -739,8 +760,9 @@ a {
   color: #0C336F;
   font-weight: 100;
   position: absolute;
-  bottom: -110px;
+  bottom: 0;
   right: 70px;
+  bottom: -110px;
 }
 
 .broadcast {
@@ -2907,7 +2929,7 @@ a {
     font-size: 16px;
   }
 
-  .benefits {
+  .benefits__wrapper {
     padding: 20px 0px 20px 0px;
   }
 
@@ -2917,6 +2939,10 @@ a {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     gap: 55px;
+  }
+
+  .benefits__body {
+    margin-bottom: 40px;
   }
 
   .benefits__content {
@@ -3170,15 +3196,21 @@ a {
     padding: 100px 0px 30px 0px;
   }
 
+  .benefits__wrapper {
+    max-height: 600px;
+  }
+
   .benefits__image {
     -webkit-box-flex: 1;
         -ms-flex: auto;
             flex: auto;
+    border-radius: 10px;
   }
 
   .benefits__image img,
   .benefits__image video {
     max-height: 300px;
+    border-radius: 10px;
   }
 
   .about-company__title {
