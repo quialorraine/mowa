@@ -1764,7 +1764,6 @@ a {
 
 .registration-item__num:before {
   display: block;
-  content: counter(list) !important;
   -webkit-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
