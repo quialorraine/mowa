@@ -1738,6 +1738,7 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 10px;
+  counter-reset: list;
   margin-bottom: 25px;
 }
 
@@ -1762,6 +1763,8 @@ a {
 
 .registration-item__num:before {
   display: block;
+  content: counter(list) !important;
+  counter-increment: list;
   -webkit-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
@@ -3705,6 +3708,7 @@ a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     -webkit-box-align: center;
