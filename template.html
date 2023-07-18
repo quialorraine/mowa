@@ -38,8 +38,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="address=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230708220928" />
-    <link rel="stylesheet" href="css/style.min.css?_v=20230708220928">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230717132043" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -133,7 +133,7 @@
         <div class="text-page__body">
             <div class="text-page__intro text-page-intro">
                 <div class="text-page-intro__image">
-                    <picture><source srcset="img/text-page-intro.webp" type="image/webp"><img src="img/text-page-intro.png" alt=""></picture>
+                    <video src="./videos/text-page-intro.mp4" muted autoplay loop></video>
                 </div>
                 <div class="text-page-intro__content">
                     <h1 class="text-page-intro__title title">
@@ -221,7 +221,7 @@
         <div class="text-page__body">
             <div class="text-page__intro text-page-intro _sub">
                 <div class="text-page-intro__image">
-                    <picture><source srcset="img/text-page-intro.webp" type="image/webp"><img src="img/text-page-intro.png" alt=""></picture>
+                    <video src="./videos/text-page-intro.mp4" muted autoplay loop></video>
                 </div>
                 <div class="text-page-intro__content">
                     <h2 class="text-page-intro__subtitle">
@@ -471,12 +471,20 @@
             <div class="contacts__buttons">
                 <button type="button" class="contacts__button tab__btn _active">
                     <span>м.Кам'янське, вул. Мальовнича, 10</span>
-                    
                 </button>
                 <button type="button" class="contacts__button tab__btn ">
                     <span> м.Кам'янське, пр. Тараса Шевченка, 3</span>
-                   
                 </button>
+                <div class="contacts__dropdown dropdown dropdown-contacts">
+                    <div class="dropdown-contacts__content dropdown__content">
+                        <button class="dropdown-contacts__button dropdown__button" type="button">
+                            м.Кам'янське, вул. Мальовнича, 10
+                        </button>
+                        <ul class="dropdown-contacts__list dropdown__list">
+
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
        
@@ -495,7 +503,7 @@
     <div class="footer__container container">
         <div class="footer__body">
             <a href="/index.html" class="footer__logo">
-                <img src="img/logo.svg" alt="logo">
+                <img src="img/logo-white.svg" alt="logo">
             </a>
             <div class="footer__content">
                 <nav class="footer__menu footer-menu">
@@ -509,7 +517,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="footer-menu__link">
+                            <a href="#" class="footer-menu__link _new">
+                                <span>Новинка</span>
                                 Користь води
                             </a>
                         </li>
@@ -674,8 +683,8 @@
     </div>
 </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230708220928"></script>
-    <script src="js/app.js?_v=20230708220928"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230717132043"></script>
+    <script src="js/app.js?_v=20230717132043"></script>
 </body>
 
 </html>
